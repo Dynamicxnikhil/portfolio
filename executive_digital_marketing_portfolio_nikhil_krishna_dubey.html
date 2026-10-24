@@ -1,0 +1,980 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Nikhil Krishna Dubey | The X-Factor Marketing Strategist | DynamicXmedia</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Google Fonts: Space Grotesk & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            asphalt: '#070b12',
+            cardBg: '#0f1623',
+            cardBorder: '#1e293b',
+            cyanGlow: '#00e5ff',
+            sunYellow: '#ffea00',
+            accentTeal: '#0d9488',
+            slateSub: '#94a3b8'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Space Grotesk', 'sans-serif'],
+          },
+          boxShadow: {
+            cyanNeon: '0 0 25px rgba(0, 229, 255, 0.25)',
+            yellowNeon: '0 0 25px rgba(255, 234, 0, 0.22)',
+            cardHover: '0 15px 35px -5px rgba(0, 229, 255, 0.12)'
+          }
+        }
+      }
+    }
+  </script>
+
+  <style>
+    body {
+      background-color: #070b12;
+      color: #f1f5f9;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    .neon-cyan-text {
+      color: #00e5ff;
+      text-shadow: 0 0 20px rgba(0, 229, 255, 0.45);
+    }
+
+    .neon-yellow-text {
+      color: #ffea00;
+      text-shadow: 0 0 20px rgba(255, 234, 0, 0.4);
+    }
+
+    .hero-cyber-grid {
+      background-size: 45px 45px;
+      background-image: 
+        linear-gradient(to right, rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+    }
+
+    .hero-glow-radial {
+      background: radial-gradient(circle at 50% 20%, rgba(0, 229, 255, 0.14) 0%, rgba(255, 234, 0, 0.06) 35%, transparent 72%);
+    }
+
+    .gradient-border-vault {
+      background: linear-gradient(#0f1623, #0f1623) padding-box,
+                  linear-gradient(135deg, #00e5ff, #ffea00) border-box;
+      border: 1px solid transparent;
+    }
+
+    .card-cyber {
+      background-color: #0f1623;
+      border: 1px solid #1e293b;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+
+    .card-cyber:hover {
+      border-color: rgba(0, 229, 255, 0.55);
+      transform: translateY(-3px);
+      box-shadow: 0 15px 30px -10px rgba(0, 229, 255, 0.15);
+    }
+  </style>
+</head>
+<body class="selection:bg-cyanGlow selection:text-asphalt antialiased">
+
+  <!-- Mobile Floating Contact Bar -->
+  <div class="fixed bottom-4 left-4 right-4 z-50 md:hidden bg-slate-900/95 backdrop-blur-md border border-slate-700/80 p-2.5 rounded-2xl shadow-2xl flex items-center justify-between gap-2">
+    <a href="https://drive.google.com/drive/folders/1OoCerrfU61-iWuw3EHsAUvtlgZGZ-cKo?usp=sharing" target="_blank" rel="noopener noreferrer" class="flex-1 bg-sunYellow hover:bg-yellow-400 text-asphalt font-black text-xs py-2.5 px-3 rounded-xl flex items-center justify-center space-x-1.5 transition text-center shadow-yellowNeon">
+      <i data-lucide="folder-open" class="w-4 h-4 text-asphalt"></i>
+      <span>Drive Vault</span>
+    </a>
+    <a href="https://wa.me/916267150519?text=Hi%20Nikhil,%20I%20reviewed%20your%20Master%20Portfolio" target="_blank" rel="noopener noreferrer" class="flex-1 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs py-2.5 px-3 rounded-xl flex items-center justify-center space-x-1.5 transition text-center">
+      <i data-lucide="message-circle" class="w-4 h-4"></i>
+      <span>WhatsApp</span>
+    </a>
+    <a href="tel:+916267150519" class="p-2.5 bg-slate-800 text-cyanGlow rounded-xl border border-slate-700 flex items-center justify-center">
+      <i data-lucide="phone-call" class="w-4 h-4"></i>
+    </a>
+  </div>
+
+  <!-- Sticky Cyber Header -->
+  <header class="sticky top-0 z-40 bg-asphalt/90 backdrop-blur-xl border-b border-slate-800/80">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+      
+      <!-- Logo Branding -->
+      <a href="#" class="flex items-center space-x-3 group">
+        <div class="px-3.5 py-1.5 bg-gradient-to-r from-cyanGlow to-blue-600 rounded-lg text-asphalt font-black text-sm tracking-wider uppercase shadow-cyanNeon group-hover:scale-105 transition">
+          NIKHIL KRISHNA D
+        </div>
+        <div class="hidden sm:block">
+          <div class="text-[11px] font-black tracking-widest text-sunYellow uppercase">UNLEASH YOUR X-FACTOR</div>
+          <div class="text-[10px] text-slate-400 font-medium">DynamicXmedia &bull; Growth Strategist</div>
+        </div>
+      </a>
+
+      <!-- Navigation Links -->
+      <nav class="hidden lg:flex items-center space-x-7 text-xs font-bold uppercase tracking-wider text-slate-300">
+        <a href="#about" class="hover:text-cyanGlow transition">About</a>
+        <a href="#drive-vault" class="text-sunYellow hover:text-yellow-300 transition flex items-center gap-1.5">
+          <span class="w-1.5 h-1.5 rounded-full bg-sunYellow animate-pulse"></span>
+          Drive Vault
+        </a>
+        <a href="#real-estate" class="hover:text-cyanGlow transition">Real Estate</a>
+        <a href="#creator-media" class="hover:text-cyanGlow transition">Creator Media</a>
+        <a href="#freelance" class="hover:text-cyanGlow transition">Freelance & Startups</a>
+        <a href="#bull-blueprints" class="hover:text-sunYellow transition">Bull Blueprint</a>
+        <a href="#calculator" class="hover:text-cyanGlow transition">ROI Estimator</a>
+      </nav>
+
+      <!-- Right Social Handles & Direct Actions -->
+      <div class="hidden sm:flex items-center space-x-3.5">
+        
+        <!-- Social SVG Icons -->
+        <div class="flex items-center space-x-2 pr-3 border-r border-slate-800">
+          <!-- Instagram -->
+          <a href="https://www.instagram.com/dynamicxnikhil?mdxt=dzEwMml2NGhxaGps" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-pink-400 hover:border-pink-500/50 transition" title="Instagram">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <!-- LinkedIn -->
+          <a href="https://www.linkedin.com/in/nikhil-krishna-strategist" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyanGlow hover:border-cyanGlow/50 transition" title="LinkedIn">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+          </a>
+          <!-- GitHub -->
+          <a href="https://github.com/Dynamicxnikhil" target="_blank" rel="noopener noreferrer" class="w-8 h-8 rounded-lg bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition" title="GitHub">
+            <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+          </a>
+        </div>
+
+        <a href="https://wa.me/916267150519?text=Hi%20Nikhil,%20reviewed%20your%20Executive%20Portfolio" target="_blank" rel="noopener noreferrer" class="inline-flex items-center space-x-1.5 bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs px-4 py-2.5 rounded-xl transition shadow-lg shadow-emerald-950">
+          <i data-lucide="message-square" class="w-3.5 h-3.5"></i>
+          <span>WhatsApp</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="about" class="relative pt-12 pb-16 lg:pt-20 lg:pb-24 hero-glow-radial hero-cyber-grid border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+        <div class="lg:col-span-8 space-y-6">
+          
+          <div class="inline-flex items-center space-x-2 px-3.5 py-1.5 rounded-full bg-slate-900 border border-cyanGlow/40 text-cyanGlow text-xs font-black tracking-widest uppercase">
+            <span class="w-2 h-2 rounded-full bg-cyanGlow animate-ping"></span>
+            <span>END-TO-END MARKETING CONSULTANCY &bull; STRATEGY. ANALYTICS. EXECUTION.</span>
+          </div>
+
+          <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-black text-white tracking-tight leading-[1.05]">
+            THE <span class="neon-cyan-text">X-FACTOR</span> MARKETING STRATEGIST
+          </h1>
+
+          <p class="text-xl sm:text-2xl font-extrabold neon-yellow-text">
+            Building 360° Marketing Architectures That Scale
+          </p>
+
+          <p class="text-sm sm:text-base text-slate-300 max-w-2xl leading-relaxed">
+            Bridging high-ticket performance lead generation (Meta, Google Ads, DV360), viral creator channel scaling, full-stack brand identity launches, and print/OOH media ecosystems.
+          </p>
+
+          <div class="flex flex-wrap gap-3 pt-2 text-xs">
+            <div class="bg-cardBg border border-slate-800 px-3.5 py-2 rounded-xl flex items-center space-x-2 text-slate-300">
+              <i data-lucide="shield-check" class="w-4 h-4 text-cyanGlow"></i>
+              <span>Digital Marketing Manager</span>
+            </div>
+            <div class="bg-cardBg border border-slate-800 px-3.5 py-2 rounded-xl flex items-center space-x-2 text-slate-300">
+              <i data-lucide="map-pin" class="w-4 h-4 text-sunYellow"></i>
+              <span>Bilaspur, CG</span>
+            </div>
+            <div class="bg-cardBg border border-slate-800 px-3.5 py-2 rounded-xl flex items-center space-x-2 text-slate-300">
+              <i data-lucide="award" class="w-4 h-4 text-emerald-400"></i>
+              <span>LinkedIn Certified: Advanced SEO</span>
+            </div>
+          </div>
+
+          <div class="pt-4 flex flex-wrap gap-4">
+            <a href="https://drive.google.com/drive/folders/1OoCerrfU61-iWuw3EHsAUvtlgZGZ-cKo?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-6 py-3.5 rounded-xl bg-sunYellow text-asphalt font-black text-xs uppercase tracking-wider hover:bg-yellow-400 transition shadow-yellowNeon inline-flex items-center space-x-2">
+              <i data-lucide="folder-check" class="w-4 h-4"></i>
+              <span>Open Google Drive Work Vault</span>
+            </a>
+            <a href="tel:+916267150519" class="px-5 py-3.5 rounded-xl bg-slate-900 border border-slate-700 text-white font-bold text-xs uppercase tracking-wider hover:border-cyanGlow transition inline-flex items-center space-x-2">
+              <i data-lucide="phone" class="w-4 h-4 text-cyanGlow"></i>
+              <span>+91-6267150519</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- Right Quick Highlight Box -->
+        <div class="lg:col-span-4 bg-cardBg border border-slate-800 rounded-3xl p-6 shadow-2xl relative">
+          <div class="flex items-center justify-between pb-4 border-b border-slate-800">
+            <div>
+              <span class="text-[11px] font-black uppercase tracking-wider text-sunYellow">Leadership Scope</span>
+              <h3 class="text-lg font-bold text-white">Full-Stack Execution</h3>
+            </div>
+            <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-cyanGlow/20 text-cyanGlow border border-cyanGlow/30">Active</span>
+          </div>
+
+          <div class="space-y-3.5 pt-4 text-xs text-slate-300">
+            <div class="flex items-start space-x-3">
+              <div class="w-6 h-6 rounded-lg bg-cyanGlow/10 border border-cyanGlow/30 flex items-center justify-center shrink-0 text-cyanGlow font-bold">1</div>
+              <span><strong>Creator Networks:</strong> Scaled YouTube creators from 15L to 40.2L &amp; IG to 360K+.</span>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="w-6 h-6 rounded-lg bg-sunYellow/10 border border-sunYellow/30 flex items-center justify-center shrink-0 text-sunYellow font-bold">2</div>
+              <span><strong>Township Scale:</strong> Lead gen, Meta Ads, AdWords &amp; DV for 100+ acre projects.</span>
+            </div>
+            <div class="flex items-start space-x-3">
+              <div class="w-6 h-6 rounded-lg bg-emerald-500/10 border border-emerald-500/30 flex items-center justify-center shrink-0 text-emerald-400 font-bold">3</div>
+              <span><strong>Freelance &amp; Startups:</strong> Full-stack brand launches (Mamta Town) &amp; 3 startups scaling.</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Core Metrics Ribbon -->
+  <section class="py-8 bg-cardBg border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-2 lg:grid-cols-4 gap-6 text-center">
+        <div class="p-3 border-r border-slate-800 last:border-none">
+          <div class="text-2xl sm:text-4xl font-black neon-cyan-text">350 Leads</div>
+          <div class="text-xs uppercase font-extrabold tracking-wider text-slate-400 mt-1">@ ₹257 CPL (Launch Month)</div>
+          <div class="text-[11px] text-cyanGlow mt-0.5">50 Site Visits &bull; 6 Direct Closings</div>
+        </div>
+        <div class="p-3 border-r border-slate-800 last:border-none">
+          <div class="text-2xl sm:text-4xl font-black neon-yellow-text">15L &rarr; 40.2L</div>
+          <div class="text-xs uppercase font-extrabold tracking-wider text-slate-400 mt-1">YouTube Subscribers</div>
+          <div class="text-[11px] text-slate-300 mt-0.5">In Just 1.5 Years &bull; Techno Banda</div>
+        </div>
+        <div class="p-3 border-r border-slate-800 last:border-none">
+          <div class="text-2xl sm:text-4xl font-black neon-cyan-text">80K &rarr; 360K</div>
+          <div class="text-xs uppercase font-extrabold tracking-wider text-slate-400 mt-1">Instagram Followers</div>
+          <div class="text-[11px] text-slate-300 mt-0.5">In 55 Weeks &bull; Sanjay IG</div>
+        </div>
+        <div class="p-3">
+          <div class="text-2xl sm:text-4xl font-black neon-yellow-text">7+ Specialists</div>
+          <div class="text-xs uppercase font-extrabold tracking-wider text-slate-400 mt-1">Team Leadership</div>
+          <div class="text-[11px] text-cyanGlow mt-0.5">Designers, Video Editors &amp; Ad Ops</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Google Drive Central Work Vault Section -->
+  <section id="drive-vault" class="py-16 bg-asphalt border-b border-slate-800 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="gradient-border-vault rounded-3xl p-8 sm:p-12 shadow-cyanNeon relative overflow-hidden">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          <div class="lg:col-span-8 space-y-4">
+            <span class="inline-block px-3 py-1 rounded bg-sunYellow/15 text-sunYellow border border-sunYellow/40 text-xs font-black uppercase tracking-widest">
+              DIRECT CLOUD WORK ARCHIVE
+            </span>
+            <h2 class="font-display text-3xl sm:text-4xl font-black text-white">
+              Access My Master Google Drive Work Vault
+            </h2>
+            <div class="flex flex-wrap gap-2 text-xs pt-1">
+              <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-slate-300">OOH Hoardings &amp; Billboards</span>
+              <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-slate-300">Full-Page Newspaper Ads</span>
+              <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-slate-300">Testimonial Video Reels</span>
+              <span class="px-3 py-1 rounded-full bg-slate-900 border border-slate-700 text-slate-300">Project Brochures &amp; Flyers</span>
+            </div>
+          </div>
+
+          <div class="lg:col-span-4 flex flex-col items-center justify-center p-6 bg-slate-900/90 rounded-2xl border border-slate-800 text-center">
+            <div class="w-14 h-14 rounded-2xl bg-cyanGlow/20 border border-cyanGlow/40 flex items-center justify-center text-cyanGlow mb-3 shadow-cyanNeon">
+              <i data-lucide="hard-drive" class="w-7 h-7"></i>
+            </div>
+            <h3 class="text-base font-bold text-white">Public Google Drive</h3>
+            <p class="text-xs text-slate-400 mt-1 mb-4">Direct access without login barriers.</p>
+
+            <a href="https://drive.google.com/drive/folders/1OoCerrfU61-iWuw3EHsAUvtlgZGZ-cKo?usp=sharing" target="_blank" rel="noopener noreferrer" class="w-full py-3.5 px-6 rounded-xl bg-cyanGlow text-asphalt font-black text-xs uppercase tracking-wider hover:bg-white transition shadow-cyanNeon inline-flex items-center justify-center space-x-2">
+              <span>Open Work Vault</span>
+              <i data-lucide="external-link" class="w-4 h-4"></i>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 1: Real Estate Projects -->
+  <section id="real-estate" class="py-16 lg:py-24 bg-cardBg/60 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-12">
+        <span class="text-xs font-black uppercase tracking-widest text-cyanGlow">ENTERPRISE SCALE REAL ESTATE</span>
+        <h2 class="font-display text-2xl sm:text-4xl font-black text-white mt-1">Real Estate Townships &amp; Performance Mandates</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-2xl">
+          Complete project rollouts covering Meta Ads, Google AdWords &amp; DV360, on-site Testimonial Studios, outdoor hoardings, and CRM sales alignment.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Project 1: New Town Bilaspur -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-cyanGlow">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-cyanGlow uppercase">Ora Makers Pvt Ltd</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-cyanGlow/20 text-cyanGlow">360° Launch</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">NEW TOWN, BILASPUR</h3>
+            <div class="text-xs font-semibold text-sunYellow">Bungalows &amp; Plots Launch &bull; Sakri, Mungeli Road</div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Delivered 350 leads at ₹257 CPL on ₹90K ad spend in the first launch month, converting into 50 verified site visits and 6 closings. Managed 7-member team across ad creatives, video walkthroughs, and billboard rollouts.
+            </p>
+            <div class="mt-4 pt-3 border-t border-slate-800 space-y-2 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Festive Print:</span>
+                <strong class="text-white">Navratri 10g Gold &amp; Spin Wheel</strong>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>RERA Reg:</span>
+                <strong class="text-cyanGlow">PCGRERA190825001968</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            Manager - Digital Marketing (Sep 2025 – Present)
+          </div>
+        </div>
+
+        <!-- Project 2: Venus Park Raipur -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-sunYellow">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-sunYellow uppercase">Ora Makers Pvt Ltd</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-yellow-400/20 text-sunYellow">Capital Plots</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">VENUS PARK, RAIPUR</h3>
+            <div class="text-xs font-semibold text-slate-300">Vidhansabha Road &bull; Kaushalya Vihar Ph 2</div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Built launch campaign framework covering demographic targeting, channel mix, transit radii angles (5 to 20 minutes from Airport, Malls, and Railway Station), and lead capture landing pages.
+            </p>
+            <div class="mt-4 pt-3 border-t border-slate-800 space-y-2 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Positioning:</span>
+                <strong class="text-white">"Plot Your Dream Life Today!"</strong>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>RERA Reg:</span>
+                <strong class="text-sunYellow">PCGRERA200125001671</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            Regional Investor Acquisition &bull; Ora Makers
+          </div>
+        </div>
+
+        <!-- Project 3: Swarnima Era -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-blue-500">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-blue-400 uppercase">Srishti Infrabuild Pvt Ltd</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">100+ Acres</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">SWARNIMA ERA</h3>
+            <div class="text-xs font-semibold text-slate-300">2, 3 &amp; 4 BHK Bungalows &bull; Testimonial Studio</div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Led a 5-member digital marketing team. Created an in-office <strong>Testimonial Studio</strong> capturing genuine buyer stories on video to establish trust. Combined targeted Meta ads, WhatsApp campaigns, and local influencer tours.
+            </p>
+            <div class="mt-4 pt-3 border-t border-slate-800 space-y-2 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Key Win:</span>
+                <strong class="text-white">In-Office Client Testimonial Studio</strong>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>RERA Reg:</span>
+                <strong class="text-blue-400">PCGRERA150426002081</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            Dy. Manager - Digital Marketing (Aug 2024 – Sep 2025)
+          </div>
+        </div>
+
+        <!-- Project 4: Aishwariyam Bilaspur -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-purple-500">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-purple-400 uppercase">Township Mandate</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-purple-500/20 text-purple-300">Luxury Plots &amp; Villas</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">AISHWARIYAM</h3>
+            <div class="text-xs font-semibold text-sunYellow">"One of the Finest Townships of Bilaspur"</div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Spearheaded performance campaigns targeting high-net-worth homebuyers and business families across Chhattisgarh using Google AdWords, Display &amp; Video 360 (DV), and Meta conversion ads.
+            </p>
+            <div class="mt-4 pt-3 border-t border-slate-800 space-y-2 text-xs">
+              <div class="flex justify-between text-slate-400">
+                <span>Ad Stack:</span>
+                <strong class="text-white">Meta Ads &bull; Google AdWords &bull; DV</strong>
+              </div>
+              <div class="flex justify-between text-slate-400">
+                <span>Focus:</span>
+                <strong class="text-purple-400">High-Ticket Lead Qualification</strong>
+              </div>
+            </div>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            Performance Lead Generation &amp; Brand Positioning
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 2: Creator Media & Influencer Performance Growth -->
+  <section id="creator-media" class="py-16 lg:py-24 bg-asphalt border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-12">
+        <span class="text-xs font-black uppercase tracking-widest text-sunYellow">VIRAL SCALING &amp; MONETIZATION</span>
+        <h2 class="font-display text-2xl sm:text-4xl font-black text-white mt-1">Creator Media &amp; Audience Growth</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-2xl">
+          Multi-million subscriber scaling, digital course monetization launches, and post-production compositing for leading content creators.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        
+        <!-- Creator 1: Techno Banda (Channel Scale) -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-cyanGlow">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-cyanGlow uppercase">YouTube Gaming Network</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-yellow-400/20 text-sunYellow">1.5 Years</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">TECHNO BANDA &mdash; PERFORMANCE GROWTH</h3>
+            <span class="text-xs text-slate-400">Creator: Aayush Tiwari</span>
+
+            <div class="my-5 bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex items-center justify-between">
+              <div>
+                <div class="text-[11px] text-slate-400 uppercase font-bold">Baseline Audience</div>
+                <div class="text-lg font-bold text-slate-300">15 Lakh Subscribers</div>
+              </div>
+              <i data-lucide="arrow-right" class="w-6 h-6 text-sunYellow"></i>
+              <div class="text-right">
+                <div class="text-[11px] text-sunYellow uppercase font-bold">Scaled Milestone</div>
+                <div class="text-xl font-black neon-yellow-text">40.2 Lakh Subs</div>
+              </div>
+            </div>
+
+            <span class="text-xs font-extrabold uppercase tracking-wider text-slate-300 block mb-2">(OFFERED SERVICES)</span>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-cyanGlow"></i>
+                <span>Personal Brand Management &amp; Collaboration Placement</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-cyanGlow"></i>
+                <span>Algorithm-aligned Content Strategy &amp; Required Marketing</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400 flex justify-between">
+            <span>Result: Top Tier Indian Gaming Voice</span>
+            <span class="text-cyanGlow font-bold">+25.2 Lakh Net Growth</span>
+          </div>
+        </div>
+
+        <!-- Creator 2: Techno Banda (Course Launch) -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-sunYellow">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-sunYellow uppercase">EdTech Commercialization</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-cyanGlow/20 text-cyanGlow">Launch Funnel</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">TECHNO BANDA &mdash; COURSE LAUNCHED</h3>
+            <span class="text-xs text-slate-400">Streamer &amp; YouTuber Course Monetization</span>
+
+            <div class="my-5 bg-slate-900/90 border border-slate-800 p-3.5 rounded-xl">
+              <div class="text-[11px] text-sunYellow uppercase font-bold mb-2">Launched Course Suites</div>
+              <div class="grid grid-cols-3 gap-2 text-center text-[10px] font-bold text-white">
+                <div class="p-2 bg-slate-800/80 rounded border border-slate-700">Live Mastery</div>
+                <div class="p-2 bg-slate-800/80 rounded border border-slate-700">Shorts Mastery</div>
+                <div class="p-2 bg-slate-800/80 rounded border border-slate-700">Video Mastery</div>
+              </div>
+            </div>
+
+            <span class="text-xs font-extrabold uppercase tracking-wider text-slate-300 block mb-2">(OFFERED SERVICES)</span>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-sunYellow"></i>
+                <span>Website Redesigning &amp; Payment Conversion Funnel</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-sunYellow"></i>
+                <span>Google &amp; Meta Ads Paid Performance Acquisition</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-sunYellow"></i>
+                <span>Post-Production, Compositing &amp; Video Editing</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400 flex justify-between">
+            <span>Platform: High ROAS Web Funnel</span>
+            <span class="text-sunYellow font-bold">10X Boost Funnel</span>
+          </div>
+        </div>
+
+        <!-- Creator 3: Unfiltered by Aparnna -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-rose-500">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-rose-400 uppercase">Podcast &amp; Creator Brand</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-rose-500/20 text-rose-300">In 6 Months</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">UNFILTERED BY APARNNA GROWTH</h3>
+            <span class="text-xs text-slate-400">Creator: Aparnna Premraj</span>
+
+            <div class="my-5 bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex items-center justify-between">
+              <div>
+                <div class="text-[11px] text-slate-400 uppercase font-bold">Initial Subscribers</div>
+                <div class="text-lg font-bold text-slate-300">50K Subscribers</div>
+              </div>
+              <i data-lucide="arrow-right" class="w-6 h-6 text-rose-400"></i>
+              <div class="text-right">
+                <div class="text-[11px] text-rose-400 uppercase font-bold">Silver Play Button</div>
+                <div class="text-xl font-black text-white">1.1 Lakh Subs</div>
+              </div>
+            </div>
+
+            <span class="text-xs font-extrabold uppercase tracking-wider text-slate-300 block mb-2">(OFFERED SERVICES)</span>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-rose-400"></i>
+                <span>Social Media Management &amp; Channel Branding</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-rose-400"></i>
+                <span>Talent Management &amp; Brand Sponsorship Negotiation</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-rose-400"></i>
+                <span>Post Production &amp; Video Compositing</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400 flex justify-between">
+            <span>Milestone: YouTube Silver Creator Award</span>
+            <span class="text-rose-400 font-bold">120%+ Growth</span>
+          </div>
+        </div>
+
+        <!-- Creator 4: Sanjay IG (Gaming Icon) -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-cyanGlow">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-cyanGlow uppercase">Gaming Icon &bull; Instagram</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-cyanGlow/20 text-cyanGlow">55 Weeks</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">SANJAY IG &mdash; PERFORMANCE GROWTH</h3>
+            <span class="text-xs text-slate-400">Creator: Sanjay Sanwala R</span>
+
+            <div class="my-5 bg-slate-900/90 border border-slate-800 p-4 rounded-xl flex items-center justify-between">
+              <div>
+                <div class="text-[11px] text-slate-400 uppercase font-bold">Initial Followers</div>
+                <div class="text-lg font-bold text-slate-300">80K Followers</div>
+              </div>
+              <i data-lucide="arrow-right" class="w-6 h-6 text-cyanGlow"></i>
+              <div class="text-right">
+                <div class="text-[11px] text-cyanGlow uppercase font-bold">Surge Milestone</div>
+                <div class="text-xl font-black neon-cyan-text">360K Followers</div>
+              </div>
+            </div>
+
+            <span class="text-xs font-extrabold uppercase tracking-wider text-slate-300 block mb-2">(OFFERED SERVICES)</span>
+            <ul class="space-y-1.5 text-xs text-slate-300">
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-cyanGlow"></i>
+                <span>Content Marketing &amp; Viral Gaming Reel Sequencing</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-cyanGlow"></i>
+                <span>Social Media Management &amp; Engagement Automation</span>
+              </li>
+              <li class="flex items-center space-x-2">
+                <i data-lucide="check" class="w-4 h-4 text-cyanGlow"></i>
+                <span>Talent Management, Video Editing &amp; Compositing</span>
+              </li>
+            </ul>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400 flex justify-between">
+            <span>Metric: Rapid IG Reel Virality</span>
+            <span class="text-cyanGlow font-bold">+280,000 Followers</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Freelance Projects & Startups -->
+  <section id="freelance" class="py-16 lg:py-24 bg-cardBg/60 border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="mb-12">
+        <span class="text-xs font-black uppercase tracking-widest text-emerald-400">DYNAMICXMEDIA MANDATES</span>
+        <h2 class="font-display text-2xl sm:text-4xl font-black text-white mt-1">Freelance Projects &amp; Startup Ecosystems</h2>
+        <p class="text-xs sm:text-sm text-slate-400 mt-2 max-w-2xl">
+          Independent strategic consultancy projects executed for private developers and early-stage startup founders.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Freelance 1: KM Builders Mamta Town -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-emerald-400">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-emerald-400 uppercase">Freelance Mandate</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-emerald-500/20 text-emerald-300">Full-Stack</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">MAMTA TOWN</h3>
+            <div class="text-xs font-semibold text-slate-300">Client: KM Builders &amp; Developers Pvt Ltd</div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Designed the end-to-end pre-launch strategy to generate immediate booking volume before official opening. Created the complete identity suite (Logo, Brochures, Leaflets, Flyers), commercial video ads, highway hoardings, and managed a high-energy Pre-Launch Event converting to bookings.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            Associated with DynamicXmedia &bull; Independent Mandate
+          </div>
+        </div>
+
+        <!-- Freelance 2: Aman Jha Startups -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-sunYellow">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-sunYellow uppercase">3 Profitable Startups</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-yellow-400/20 text-sunYellow">Founder Advisory</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">AMAN JHA &mdash; FOUNDER &amp; CEO</h3>
+            <div class="text-xs font-semibold text-cyanGlow">Kaunsa Hostel &bull; Youth Premier &bull; Digital Adhyay</div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Architected the digital presence and user acquisition framework across 3 profitable ventures founded by Aman Jha.
+            </p>
+            <div class="mt-4 pt-3 border-t border-slate-800">
+              <span class="text-[11px] font-bold text-slate-300 block mb-1.5">(OFFERED SERVICES)</span>
+              <ul class="space-y-1 text-xs text-slate-300">
+                <li class="flex items-center space-x-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sunYellow"></i>
+                  <span>Complete Web Development &amp; Architecture</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sunYellow"></i>
+                  <span>Search Engine Optimization (SEO) &amp; PPC Ads</span>
+                </li>
+                <li class="flex items-center space-x-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sunYellow"></i>
+                  <span>Analytics, Conversion Funnels &amp; Reporting</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            Direct Founder Strategic Advisory
+          </div>
+        </div>
+
+        <!-- Freelance 3: Election Campaigns -->
+        <div class="card-cyber rounded-2xl p-7 flex flex-col justify-between border-t-4 border-t-blue-500">
+          <div>
+            <div class="flex items-center justify-between pb-3 border-b border-slate-800">
+              <span class="text-xs font-black text-blue-400 uppercase">Political Consultancy</span>
+              <span class="text-[10px] font-bold px-2 py-0.5 rounded bg-blue-500/20 text-blue-300">Assembly 2023</span>
+            </div>
+            <h3 class="text-xl font-black text-white mt-3">THE POLITICAL PARTNER</h3>
+            <div class="text-xs font-semibold text-slate-300">Chhattisgarh Assembly Election Campaigns</div>
+            <p class="text-xs text-slate-300 mt-3 leading-relaxed">
+              Ran high-pressure paid Meta ad campaigns for MLA candidates, building rapid narrative video content, constituency-specific targeting, and live polling sentiment monitoring.
+            </p>
+          </div>
+          <div class="mt-6 pt-3 border-t border-slate-800 text-[11px] text-slate-400">
+            Rapid Paid Broadcasts &amp; Targeted Pin-Code Ads
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 4: Tailored Blueprints for Bull Seva Organics & Bull Events -->
+  <section id="bull-blueprints" class="py-16 lg:py-24 bg-asphalt border-b border-slate-800">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16">
+        <span class="text-xs font-black uppercase tracking-widest text-sunYellow">BESPOKE HIRING BLUEPRINT</span>
+        <h2 class="font-display text-3xl sm:text-4xl font-extrabold text-white mt-2">
+          90-Day Execution Plan: Bull Seva Organics &amp; Bull Events
+        </h2>
+        <p class="text-sm text-slate-400 mt-3">
+          How I will immediately apply my multi-brand growth playbook to scale online direct sales for Bull Seva Organics and high-ticket bookings for Bull Events in Varanasi.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+        
+        <!-- Blueprint A: Bull Seva Organics -->
+        <div class="bg-cardBg border border-emerald-500/30 rounded-3xl p-8 relative overflow-hidden shadow-2xl">
+          <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+            <div>
+              <span class="text-xs uppercase font-extrabold text-emerald-400 tracking-wider">E-Commerce &amp; D2C FMCG</span>
+              <h3 class="text-2xl font-bold text-white mt-1">Bull Seva Organics</h3>
+              <p class="text-xs text-slate-400">Cold-Pressed Oils, Besan &amp; Organic Spices</p>
+            </div>
+            <div class="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400">
+              <i data-lucide="leaf" class="w-6 h-6"></i>
+            </div>
+          </div>
+
+          <div class="mt-6 space-y-4">
+            <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+              <h4 class="text-xs uppercase font-bold text-sunYellow mb-1">1. Authenticity &amp; Purity Proof Video Hooks</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Replace generic static images with video shorts: cold-press extraction of Yellow Mustard Oil, unadulterated spice aromas, and foaming tests vs commercial oils to conquer consumer skepticism.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+              <h4 class="text-xs uppercase font-bold text-cyanGlow mb-1">2. High-AOV Kitchen Bundles (&gt;₹799)</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Bundle oils, spices, and besan into "Shuddh Rasoi Monthly Starter Kits" with free delivery thresholds to maximize order value and protect ad margins over CAC.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+              <h4 class="text-xs uppercase font-bold text-emerald-400 mb-1">3. Meta CAPI &amp; GA4 Abandoned Cart Recovery</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Deploy server-side Meta Conversions API and GA4 purchase events on bullseva.com, running automated WhatsApp nudges to recover dropped checkouts.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>Target ROAS: <strong class="text-white font-bold">3.5x – 4.5x</strong></span>
+            <span>Focus: <strong class="text-emerald-400 font-bold">Direct E-Commerce Orders</strong></span>
+          </div>
+        </div>
+
+        <!-- Blueprint B: Bull Events -->
+        <div class="bg-cardBg border border-sunYellow/30 rounded-3xl p-8 relative overflow-hidden shadow-2xl">
+          <div class="flex items-center justify-between pb-6 border-b border-slate-800">
+            <div>
+              <span class="text-xs uppercase font-extrabold text-sunYellow tracking-wider">High-Ticket Wedding &amp; Corporate</span>
+              <h3 class="text-2xl font-bold text-white mt-1">Bull Events (Varanasi)</h3>
+              <p class="text-xs text-slate-400">Luxury Weddings &amp; Large-Scale Galas</p>
+            </div>
+            <div class="w-12 h-12 rounded-2xl bg-yellow-400/10 border border-yellow-400/20 flex items-center justify-center text-sunYellow">
+              <i data-lucide="sparkles" class="w-6 h-6"></i>
+            </div>
+          </div>
+
+          <div class="mt-6 space-y-4">
+            <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+              <h4 class="text-xs uppercase font-bold text-cyanGlow mb-1">1. Google Local &amp; GMB Dominance in Varanasi</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Capture high-intent searches ("Luxury Wedding Planner in Varanasi", "Event Management Company") with top-3 GMB rankings, video stage tours, and verified client reviews.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+              <h4 class="text-xs uppercase font-bold text-sunYellow mb-1">2. Budget-Qualifying WhatsApp Lead Flow</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Two-step lead forms capturing wedding dates and estimated budget brackets (&gt;₹5L / &gt;₹15L) with instant automated delivery of luxury lookbooks before sales consultation.
+              </p>
+            </div>
+
+            <div class="bg-slate-900/80 p-4 rounded-xl border border-slate-800">
+              <h4 class="text-xs uppercase font-bold text-rose-400 mb-1">3. Pre-Sahalagna Season Video Campaigns</h4>
+              <p class="text-xs text-slate-300 leading-relaxed">
+                Launch cinematic decor reels 60–90 days prior to auspicious wedding seasons across eastern UP to capture early wedding venue bookings.
+              </p>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-slate-800 flex items-center justify-between text-xs text-slate-400">
+            <span>Target: <strong class="text-white font-bold">35+ Exclusive Inquiries / Month</strong></span>
+            <span>Focus: <strong class="text-sunYellow font-bold">High-Ticket Contracts</strong></span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Campaign ROI & Budget Estimator -->
+  <section id="calculator" class="py-16 bg-cardBg/80 border-b border-slate-800">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="bg-slate-900/90 border border-slate-800 rounded-3xl p-6 sm:p-10 shadow-2xl">
+        <div class="text-center mb-8">
+          <span class="text-xs font-black uppercase tracking-widest text-cyanGlow">Interactive Pipeline Planner</span>
+          <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white mt-1">Campaign ROI &amp; Lead Estimator</h3>
+          <p class="text-xs sm:text-sm text-slate-400 mt-1">Project qualified inquiries and unit closings based on tested campaign metrics.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+          <div class="space-y-5">
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-300 mb-2">Planned Monthly Ad Spend (₹)</label>
+              <input type="range" id="spend-slider" min="30000" max="300000" step="10000" value="90000" class="w-full h-2 bg-slate-700 rounded-lg appearance-none cursor-pointer accent-cyanGlow" oninput="calculateEstimates()">
+              <div class="flex justify-between text-xs text-slate-400 mt-1 font-semibold">
+                <span>₹30,000</span>
+                <span id="spend-display" class="text-cyanGlow font-bold text-base">₹90,000</span>
+                <span>₹3,00,000</span>
+              </div>
+            </div>
+
+            <div>
+              <label class="block text-xs font-bold uppercase text-slate-300 mb-2">Campaign Vertical</label>
+              <select id="vertical-select" class="w-full bg-slate-800 border border-slate-700 rounded-xl px-4 py-2.5 text-xs text-slate-200 font-semibold focus:outline-none focus:border-cyanGlow" onchange="calculateEstimates()">
+                <option value="realty">Real Estate Townships (Avg CPL ₹280)</option>
+                <option value="events">Bull Events / Luxury Weddings (Avg CPL ₹400)</option>
+                <option value="d2c">Bull Seva Organics / D2C (Avg CPA ₹190)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Output Panel -->
+          <div class="bg-asphalt border border-slate-800 rounded-2xl p-6 space-y-4">
+            <div class="flex justify-between items-center pb-3 border-b border-slate-800">
+              <span class="text-xs text-slate-400 uppercase font-bold">Estimated Qualified Leads</span>
+              <span id="estimated-leads" class="text-2xl font-black neon-yellow-text">321</span>
+            </div>
+            <div class="flex justify-between items-center pb-3 border-b border-slate-800">
+              <span class="text-xs text-slate-400 uppercase font-bold">Expected Inquiries / Visits</span>
+              <span id="estimated-visits" class="text-xl font-black neon-cyan-text">48</span>
+            </div>
+            <div class="flex justify-between items-center">
+              <span class="text-xs text-slate-400 uppercase font-bold">Projected Closings / Contracts</span>
+              <span id="estimated-closings" class="text-xl font-black text-emerald-400">5 – 6</span>
+            </div>
+            <p class="text-[10px] text-slate-500 pt-2 text-center">
+              *Projections aligned with proven campaigns at Ora Makers &amp; DynamicXmedia.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Sleek Dark Footer -->
+  <footer class="py-16 bg-asphalt text-center">
+    <div class="max-w-4xl mx-auto px-4 space-y-6">
+      
+      <div class="flex items-center justify-center space-x-2">
+        <div class="px-3 py-1 bg-gradient-to-r from-cyanGlow to-blue-600 rounded text-asphalt font-black text-xs uppercase tracking-wider">
+          DX
+        </div>
+        <span class="font-extrabold text-white text-sm">DynamicXmedia</span>
+      </div>
+
+      <h3 class="font-display text-2xl sm:text-3xl font-extrabold text-white">
+        Ready to engineer high-velocity growth?
+      </h3>
+      
+      <p class="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto leading-relaxed">
+        Ready for immediate deployment to lead digital marketing and brand performance for Bull Seva Organics &amp; Bull Events in Varanasi.
+      </p>
+
+      <!-- Social Icons in Footer -->
+      <div class="flex items-center justify-center gap-3 pt-2">
+        <a href="https://www.instagram.com/dynamicxnikhil?mdxt=dzEwMml2NGhxaGps" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-pink-400 hover:border-pink-500/50 transition" title="Instagram">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.13-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/nikhil-krishna-strategist" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-cyanGlow hover:border-cyanGlow/50 transition" title="LinkedIn">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+        </a>
+        <a href="https://github.com/Dynamicxnikhil" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-xl bg-slate-900 border border-slate-800 flex items-center justify-center text-slate-400 hover:text-white hover:border-slate-500 transition" title="GitHub">
+          <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 24 24"><path fill-rule="evenodd" clip-rule="evenodd" d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.53 1.032 1.53 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+        </a>
+      </div>
+
+      <div class="pt-2 flex flex-wrap justify-center gap-3">
+        <a href="https://drive.google.com/drive/folders/1OoCerrfU61-iWuw3EHsAUvtlgZGZ-cKo?usp=sharing" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-sunYellow text-asphalt font-black text-xs uppercase tracking-wider hover:bg-yellow-400 transition shadow-yellowNeon inline-flex items-center space-x-2">
+          <i data-lucide="folder" class="w-4 h-4"></i>
+          <span>Open Drive Vault</span>
+        </a>
+        <a href="https://wa.me/916267150519?text=Hi%20Nikhil,%20let's%20schedule%20a%20discussion" target="_blank" rel="noopener noreferrer" class="px-6 py-3 rounded-xl bg-emerald-600 hover:bg-emerald-500 text-white font-bold text-xs uppercase tracking-wider transition inline-flex items-center space-x-2">
+          <i data-lucide="message-square" class="w-4 h-4"></i>
+          <span>WhatsApp Chat</span>
+        </a>
+        <a href="tel:+916267150519" class="px-6 py-3 rounded-xl bg-slate-900 border border-slate-700 hover:border-cyanGlow text-white font-bold text-xs uppercase tracking-wider transition inline-flex items-center space-x-2">
+          <i data-lucide="phone" class="w-4 h-4 text-cyanGlow"></i>
+          <span>+91-6267150519</span>
+        </a>
+      </div>
+
+      <div class="text-[11px] text-slate-500 pt-6">
+        &copy; 2026 Nikhil Krishna Dubey &bull; DynamicXmedia &bull; Strategy. Analytics. Execution.
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Script for icon rendering & calculator logic -->
+  <script>
+    lucide.createIcons();
+
+    function calculateEstimates() {
+      const spend = parseInt(document.getElementById('spend-slider').value);
+      const vertical = document.getElementById('vertical-select').value;
+      document.getElementById('spend-display').innerText = '₹' + spend.toLocaleString('en-IN');
+
+      let cpl = 280;
+      let visitRatio = 0.15;
+      let closeRatio = 0.02;
+
+      if (vertical === 'events') {
+        cpl = 400;
+        visitRatio = 0.20;
+        closeRatio = 0.04;
+      } else if (vertical === 'd2c') {
+        cpl = 190;
+        visitRatio = 0.35;
+        closeRatio = 0.05;
+      }
+
+      const leads = Math.round(spend / cpl);
+      const visits = Math.round(leads * visitRatio);
+      const minClosings = Math.max(1, Math.round(leads * closeRatio));
+      const maxClosings = Math.round(minClosings * 1.4);
+
+      document.getElementById('estimated-leads').innerText = leads.toLocaleString('en-IN');
+      document.getElementById('estimated-visits').innerText = visits.toLocaleString('en-IN');
+      document.getElementById('estimated-closings').innerText = minClosings + ' – ' + maxClosings;
+    }
+  </script>
+</body>
+</html>
